@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Google.FlatBuffers</id>
+    <version>24.3.25</version>
+    <authors>Google LLC</authors>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>flatbuffers.png</icon>
+    <projectUrl>https://github.com/google/flatbuffers</projectUrl>
+    <description>A cross-platform memory efficient serialization library</description>
+    <copyright>Copyright 2022 Google LLC</copyright>
+    <tags>Google FlatBuffers Serialization Buffer Binary zero copy</tags>
+    <repository type="git" url="https://github.com/google/flatbuffers" commit="595bf0007ab1929570c7671f091313c8fc20644e" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+      <group targetFramework="net8.0" />
+      <group targetFramework=".NETStandard2.1" />
+    </dependencies>
+  </metadata>
+</package>
