@@ -1,0 +1,9 @@
+include "../Common/Rewards.fbs";
+
+namespace FlatBuffersSetup.Gameplay;
+
+table ChestSettings {
+    id: int;
+    rarity: string;
+    rewards: [Common.RewardSettings];
+}

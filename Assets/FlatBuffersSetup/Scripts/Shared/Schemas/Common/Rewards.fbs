@@ -1,0 +1,16 @@
+namespace FlatBuffersSetup.Common;
+
+union RewardExt { ResourceReward, AbilityReward }
+
+table RewardSettings {
+    ext: RewardExt;
+}
+
+table ResourceReward {
+    resource_type: string;
+    resource_amount: int;
+}
+
+table AbilityReward {
+    ability_id: string;
+}

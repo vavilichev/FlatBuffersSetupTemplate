@@ -1,0 +1,11 @@
+include "Gameplay/Chests.fbs";
+include "Gameplay/Buildings.fbs";
+
+namespace FlatBuffersSetup;
+
+table GameSettings {
+    buildings: [Gameplay.BuildingSettings];
+    chests: [Gameplay.ChestSettings];
+}
+
+root_type GameSettings;

@@ -1,0 +1,8 @@
+namespace FlatBuffersSetup.Gameplay;
+
+table BuildingSettings {
+    typeId: string;
+    titleLid: string;
+    building_price_resource_type: string;
+    building_price_value: int;
+}
