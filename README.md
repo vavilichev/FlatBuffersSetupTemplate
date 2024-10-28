@@ -29,3 +29,24 @@
 ___
 
 ## Подготовка проекта
+
+### 1. Ставим Nuget для Unity
+Тут все просто, ставим NuGet для Unity, используя ссылку ниже, или, если угодно, с [офф репозитория скопировать можно](https://github.com/GlitchEnzo/NuGetForUnity):
+```
+https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity
+```
+
+### 2. Ставим FlatBuffers
+Через появившееся меню NuGet в Unity заходим в менеджер пакетов NuGet. Путь **NuGet/Manage NuGet Packages**. В поиске вбиваем **Google.Flatbuffers** и устанавливаем пакет.
+<br>
+![image](https://github.com/user-attachments/assets/3e1fe5aa-2ee3-4fd0-9715-1abcc791b93f)
+
+> [!WARNING]
+> В следующем пункте описано добавление компилятора flatc.exe, однако, в данном шаблоне он уже добавлен: **Assets/FlatBuffers/flatc.exe**
+
+В случае, если вы настраиваете проект самостоятельно, то с [официального репозитория FlatBuffers](https://github.com/google/flatbuffers/releases) нужно скачать компилятор flatc для своей операционной системы. Для себя я рассматриваю пример для Windows, если что.
+Исполняемый файл можно поместить куда-то на ПК (в этом случае нужно также добавить путь к flatc.exe параметры окружающей среды, в Path), или же в папку с проектом. В данном шаблоне компилятор располагается внутри папки с проектом: **Assets/FlatBuffers/flatc.exe**.
+FlatBuffers готов к использованию в Unity.
+
+
+
